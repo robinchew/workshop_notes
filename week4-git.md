@@ -6,7 +6,7 @@ git init
 Common Commands
 ===============
 
-git log
+git log (gitk)
 git status
 git diff
 
