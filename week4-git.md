@@ -19,8 +19,13 @@ git commit -a -m "Add and commit"
 Less Common Commands
 ====================
 
-git reset HEAD^^
-git reset HEAD~5
+Git reset 2 commits back without losing data:
+
+    git reset HEAD^^
+
+Git reset 5 commits back without losing data:
+
+    git reset HEAD~5
 
 Pulling other people's code
 ===========================
