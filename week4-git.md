@@ -7,6 +7,7 @@ Common Commands
 ===============
 
 git log (You can use gitk alternatively)
+git log (gitk and stuff)
 git status
 git diff
 
