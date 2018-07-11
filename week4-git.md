@@ -14,7 +14,7 @@ git add file.py
 git commit -m "First Commit"
 git commit -a -m "Add and commit"
 
-Less common commands
+Less Common Commands
 ====================
 
 git reset HEAD^^
