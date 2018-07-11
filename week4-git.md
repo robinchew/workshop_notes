@@ -20,3 +20,8 @@ Less Common Commands
 
 git reset HEAD^^
 git reset HEAD~5
+
+Pulling other people's code
+===========================
+
+git pull (but only works if you have run `git clone`)
