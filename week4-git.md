@@ -2,6 +2,7 @@ Starting Command
 ================
 
 git init
+git clone folder1 my_folder1
 
 Common Commands
 ===============
