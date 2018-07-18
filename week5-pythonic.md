@@ -158,3 +158,19 @@ plus(*[1, 2])
 plus(1, 2) # equivalent to line above
 
 ```
+
+File handling with context processor
+------------------------------------
+
+```
+f = open('index.html', 'w')
+f.write(html_index)
+f.close()
+```
+
+The close occurs after the `with` context processor block exits.
+
+```
+with open('index.html', 'w') as f:
+    f.write(html_index)
+```
