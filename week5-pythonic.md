@@ -56,3 +56,16 @@ klist contains:
     {'price': 22, 'index': 1}
 ]
 ```
+
+List Comprehension
+------------------
+
+```
+klist = [
+    {
+        'price': entry['price'] + 10,
+        'index': i,
+    }
+    for i, entry in enumerate(entries)
+]
+```
