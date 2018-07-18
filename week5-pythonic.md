@@ -70,6 +70,46 @@ klist = [
 ]
 ```
 
+Joining list of string
+----------------------
+
+```
+l = ['My', 'name', 'is', 'Robin']
+
+s = ''
+for word in l:
+    s = s + word + ' '
+
+s2 = ' '.join(l)
+```
+```
+def capitalise(s):
+    return s[0].upper() + s[1:]
+
+sentence = ''
+
+for word in l:
+    sentence += captalise(word) + ' '
+
+sentence = sentence.strip()
+```
+
+```
+l2 = [capitalise(word) for word in l]
+sentence = ' '.join(l2)
+```
+OR
+```
+sentence = ' '.join(capitalise(word) for word in l)
+```
+OR formatted differently as:
+```
+sentence = ' '.join(
+    capitalise(word)
+    for word in l
+)
+```
+
 Unpacking arguments
 ------------------- 
 
