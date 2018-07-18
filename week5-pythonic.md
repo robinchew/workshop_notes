@@ -36,3 +36,23 @@ for entry in entries:
         'price': entry['price'] + 10
     })
 ```
+
+If you insist on using `i`:
+
+```
+klist = []
+
+for i, entry in enumerate(entries):
+    klist.append({
+        'price': entry['price'] + 10,
+        'index': i,
+    })
+```
+
+```
+klist contains:
+[
+    {'price': 21, 'index': 0},
+    {'price': 22, 'index': 1}
+]
+```
