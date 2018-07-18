@@ -110,6 +110,27 @@ sentence = ' '.join(
 )
 ```
 
+```
+prices = [154.4, 158.2, 140.6, 124.5, 124.0, 120.0]
+
+def cents_to_dollar(price):
+    return '${}'.format(round(price) / 100)
+
+top_5_sorted = sorted(prices, reverse=True)[0:5]
+
+joined_prices = ', '.join(
+    cents_to_dollar(price)
+    for price in top_5_sorted)
+
+'The top 5 most expensive  prices are {}'.format(joined_prices)
+```
+OR
+```
+'The top 5 most expensive prices are {}'.format(', '.join(
+    '${}'.format(round(price) / 100)
+    for price in sorted(prices, reverse=True)[0:5]))
+```
+
 Unpacking arguments
 ------------------- 
 
