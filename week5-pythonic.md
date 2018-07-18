@@ -69,3 +69,31 @@ klist = [
     for i, entry in enumerate(entries)
 ]
 ```
+
+Unpacking arguments
+------------------- 
+
+```
+def plus(a, b):
+    return a + b
+
+plus(1, 2)
+
+arg_list = [1, 2]
+
+plus(arg_list[0], arg_list[1])
+
+# Destructure first
+
+a, b = arg_list
+plus(a, b)
+
+# Unpack arguments
+
+plus(*arg_list)
+plus(arg_list) # wrong
+
+plus(*[1, 2])
+plus(1, 2) # equivalent to line above
+
+```
