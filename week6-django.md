@@ -22,3 +22,21 @@ But creating a user requires the database to contain the user table, so you need
 Now create a super user and follow the prompts:
 
     python manage.py createsuperuser
+
+Templates
+---------
+
+For templates to work, don't forget to install your `my_django_project` app in `my_django_project/settings.py`:
+
+    INSTALLED_APPS = [
+        'django.contrib.blah',
+        'django.contrib.blah',
+        'django.contrib.blah',
+        'my_django_project',
+    ]
+
+So now whatever HTML file (say index.html) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view:
+
+    from django.shortcuts import render
+    def index(request):
+        return render(request, 'index.html')
