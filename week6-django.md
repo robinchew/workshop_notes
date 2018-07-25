@@ -1,9 +1,11 @@
 Week 6 - Django
 ===============
 
+Open your terminal (not python shell):
+
 ```
 pip install django
-django-admin start_project my_django_project
+django-admin startproject my_django_project
 cd my_django_project
 python manage.py runserver
 ```
