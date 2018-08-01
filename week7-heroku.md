@@ -32,7 +32,7 @@ These are the libraries that heroku will install when you deploy. Note that the 
 Procfile
 --------
 
-Another which is a file named `Procfile` (Note capital letter) in your project root directory, and it must contain the following line BUT sustitute `<PROJECT_APP>` with your 'project app' name::
+Another which is a file named `Procfile` (Note capital letter) in your project root directory, and it must contain the following line BUT sustitute `<PROJECT_APP>` with your 'project app' name (Note the deliberate '-' at the end of the line):
 
     web: gunicorn <PROJECT_APP>.wsgi --log-file -
 
@@ -55,3 +55,8 @@ Your file structure could look something this:
     └── requirements.txt
 
 With the above example, `my_django_project` is the 'project' name, while `main` is the 'project app' name. Our example shows the 'project' and 'project app' to have the same name but it is typical for the 'project' name and 'project app' name to be the same.
+
+Almost there
+------------
+
+You got to now remember to `git add` the Procfile and requirements.txt, or else those files are not pushed to Heroku.
