@@ -60,3 +60,15 @@ Almost there
 ------------
 
 You got to now remember to `git add` the Procfile and requirements.txt, or else those files are not pushed to Heroku.
+
+Woops! not quite there
+----------------------
+
+Heroku is complaining about collectstatic, just out of laziness, just run:
+
+    heroku config:set DISABLE_COLLECTSTATIC=1
+
+Push Success! But...
+--------------------
+
+A successful push should give you the public URL you can visit. It's going to give you new errors though, but they are Django errors now. Run `heroku log --tail` to see the Python/Django errors.
