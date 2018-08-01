@@ -32,9 +32,9 @@ These are the libraries that heroku will install when you deploy. Note that the 
 Procfile
 --------
 
-Another which is a file named `Procfile` (Note capital letter) in your project root directory, and it must contain the following line BUT sustitute `<PROJECT>` with your 'project app' name::
+Another which is a file named `Procfile` (Note capital letter) in your project root directory, and it must contain the following line BUT sustitute `<PROJECT_APP>` with your 'project app' name::
 
-    web: gunicorn <PROJECT>.wsgi --log-file -
+    web: gunicorn <PROJECT_APP>.wsgi --log-file -
 
 But what is the 'project app' name?
 
