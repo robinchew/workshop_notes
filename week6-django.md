@@ -39,4 +39,6 @@ So now whatever HTML file (say index.html) you put in `my_django_project/templat
 
     from django.shortcuts import render
     def index(request):
-        return render(request, 'index.html')
+        return render(request, 'index.html', {
+            'num': 123,
+        })
