@@ -42,3 +42,11 @@ So now whatever HTML file (say index.html) you put in `my_django_project/templat
         return render(request, 'index.html', {
             'num': 123,
         })
+
+Assuming your template contains the following:
+
+    <p>My favourite number is {{ num }}</p>
+
+Then your browser will render:
+
+    My favourite number is 123
