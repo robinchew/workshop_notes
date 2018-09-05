@@ -61,5 +61,20 @@ Now you can get the string (text) content (formatted as an XML in RSS format) fr
     response = requests.get('https://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS')
 
     feed = feedparser.parse(response.content)
+    print(feed)
 
-`feed` is a datastructure type called a 'dictionary', and we will learn about datastructures next week and how to work with them.
+`feed` is a datastructure type called a 'dictionary', and we will learn about datastructures next week and how to work with them. To see the content of feed we can print then, but it looks unreadable.
+
+Instead we are going to print `feed` with `pprint`:
+
+    import pprint
+    feed = feedparser.parse(response.content)
+    pprint.pprint(feed, indent=4)
+
+Or rewritten and imported differently as:
+
+    from pprint import pprint
+    feed = feedparser.parse(response.content)
+    pprint(feed, indent=4)
+
+The `pprint` to the right of `from` is a module. The `pprint` to the right of `import` is a function. It's too bad that they are named the same that causes some confusion.
