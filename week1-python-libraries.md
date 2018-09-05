@@ -3,13 +3,18 @@ Terminology
 
 Terminal and shell means the same thing.
 
+Install Python
+==============
+
+Install Python 3.x for Windows, and make sure you tick `Add Python 3.x to PATH` https://3.bp.blogspot.com/-pQXaSsTBovk/VfqLc2dTvcI/AAAAAAAABNE/SW0e9eEkhzs/s1600/python1.PNG. Re-install and tick it if you have to. This ensures that you can run `python` and `pip` in your `cmd` terminal.
+
 Edit Python Code
 ================
 
 Create a folder to keep your python file (eg. fuelwatch.py), use your file manager to go into the folder and open the python file with your favourite text editor (eg. sublime text editor).
 
 Let it contain:
-    
+
     print('give me fuel, give me fire')
 
 Run Python code
