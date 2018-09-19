@@ -61,3 +61,19 @@ def get_fuel(product_id):
     data = feedparser.parse('http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product='+str(product_id)+'&Suburb=Cloverdale')
     return data['entries']
 ```
+
+Sorting
+-------
+
+```
+l1 = [{'name': 'Robin', 'age': 44}, {'name': 'John', 'age': 22}, {'name': 'Mary', 'age': 33}]
+
+def by_age(item):
+   return item['age']
+
+sorted_l1 = sorted(l1, key=by_age)
+```
+`sorted_l1` will contain:
+```
+[{'name': 'John', 'age': 22}, {'name': 'Mary', 'age': 33}, {'name': 'Robin', 'age': 44}]
+```
