@@ -35,3 +35,26 @@ line = 'Heading. Paragraph {}.'.format(var)
 f.write(line + body)
 f.close()
 ```
+
+Adding strings together
+-----------------------
+
+```
+content = '''
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+'''
+
+l = ['one', 'two' ,'three', 'four']
+
+big_string = ''
+for word in l:
+    big_string = big_string + '<li>' + word + '</li>'
+
+big_string = '<ol>' + big_string + '</ol>'
+
+with open('list.html', 'w') as f:
+    f.write(big_string)
+```
