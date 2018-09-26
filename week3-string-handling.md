@@ -1,3 +1,6 @@
+Format String
+-------------
+
 ```
 first_name = 'James'
 last_name = 'Bond'
@@ -13,4 +16,22 @@ age = 55
 All results in:
 ```
 'The name is Bond. James Bond. And I am 55'
+```
+
+Write Multiline String & Save in a File
+---------------------------------------
+
+```
+f = open('table.html', 'w')
+var = 124
+
+body = '''
+    <h1>Heading.</h1>
+    <p>Paragraph {}.</p>
+'''.format(var)
+
+line = 'Heading. Paragraph {}.'.format(var)
+
+f.write(line + body)
+f.close()
 ```
