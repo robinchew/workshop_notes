@@ -1,8 +1,9 @@
 Starting Command
 ================
 
-git init
-git clone folder1 my_folder1
+    cd my_folder1
+    git init
+    git clone folder1 my_folder1
 
 Common Commands
 ===============
