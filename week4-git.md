@@ -5,6 +5,8 @@ Find the executable at https://git-scm.com/download/win
 
 Just press 'Next' until **Choosing the default editor useby by Git**.
 
+![Screenshot of default editor during git installation](https://i.imgur.com/l9LNK7M.jpg)
+
 Install Git for Mac
 ===================
 
