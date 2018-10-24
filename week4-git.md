@@ -1,9 +1,15 @@
 Starting Command
 ================
 
-    cd my_folder1
+Starting a new git project:
+
+    mkdir my_folder
+    cd my_folder
     git init
-    git clone folder1 my_folder1
+
+Pulling existing git  project from the web:
+
+    git clone https://github.com/robinchew/workshop_notes.git
 
 Common Commands
 ===============
