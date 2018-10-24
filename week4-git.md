@@ -1,3 +1,8 @@
+Install Git for Windows
+=======================
+
+Find the executable at https://git-scm.com/download/win
+
 Starting Command
 ================
 
