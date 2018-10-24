@@ -3,6 +3,13 @@ Install Git for Windows
 
 Find the executable at https://git-scm.com/download/win
 
+Just press 'Next' until **Choosing the default editor useby by Git**.
+
+Install Git for Mac
+===================
+
+Find DMG installable at https://git-scm.com/download/mac
+
 Starting Command
 ================
 
