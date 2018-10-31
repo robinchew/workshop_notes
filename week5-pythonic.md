@@ -61,6 +61,16 @@ List Comprehension
 ------------------
 
 ```
+a = [11, 12, 13]
+b = [
+    v+5
+    for v in a
+]
+```
+`b` will equal `[16, 17, 18]`
+
+Below also demonstrates list comprehension but with access to the index with `enumerate`.
+```
 klist = [
     {
         'price': entry['price'] + 10,
