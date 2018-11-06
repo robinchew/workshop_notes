@@ -35,7 +35,7 @@ For templates to work, don't forget to install your `my_django_project` app in `
         'my_django_project',
     ]
 
-So now whatever HTML file (say index.html) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view:
+So now whatever HTML file (say index.html) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view which can live in your **app** folder `my_django_project/views.py`:
 
     from django.shortcuts import render
     def index(request):
@@ -50,3 +50,19 @@ Assuming your template contains the following:
 Then your browser will render:
 
     My favourite number is 123
+
+URLS
+----
+
+You have a view and template but no way to access them from the URL.
+
+So you have to set the route in `my_django_project/urls.py`
+
+```
+from my_django_project.views import index
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', index),
+]
+```
