@@ -61,11 +61,14 @@ You have a view and template but no way to access them from the URL.
 So you have to set the route in `my_django_project/urls.py`
 
 ```python
+from django.urls import re_path
 from my_django_project.views import index
 
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
-    path(r'^$', index),
+    path('admin/', admin.site.urls),
+    re_path('^$', index),
+    # Equivalent to below
+    # path('', index),
 ]
 ```
-The characters inside r`` are regular expressions. `^` means start of line and `$` means end of line.
+Just to teach a bit of regular expressions, we are using `re_path` instead of `path`. The characters inside `r''` are regular expressions. `^` means start of line and `$` means end of line.
