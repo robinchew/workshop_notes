@@ -35,13 +35,15 @@ For templates to work, don't forget to install your `my_django_project` app in `
         'my_django_project',
     ]
 
-So now whatever HTML file (say index.html) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view which can live in your **app** folder `my_django_project/views.py`:
+So now whatever HTML file (say `index.html`) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view which can live in your **app** folder `my_django_project/views.py`:
 
-    from django.shortcuts import render
-    def index(request):
-        return render(request, 'index.html', {
-            'num': 123,
-        })
+```python
+from django.shortcuts import render
+def index(request):
+    return render(request, 'index.html', {
+        'num': 123,
+    })
+```
 
 Assuming your template contains the following:
 
@@ -58,7 +60,7 @@ You have a view and template but no way to access them from the URL.
 
 So you have to set the route in `my_django_project/urls.py`
 
-```
+```python
 from my_django_project.views import index
 
 urlpatterns = [
@@ -66,3 +68,4 @@ urlpatterns = [
     url(r'^$', index),
 ]
 ```
+The characters inside r`` are regular expressions. `^` means start of line and `$` means end of line.
