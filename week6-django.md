@@ -64,8 +64,8 @@ So you have to set the route in `my_django_project/urls.py`
 from my_django_project.views import index
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', index),
+    path(r'^admin/', admin.site.urls),
+    path(r'^$', index),
 ]
 ```
 The characters inside r`` are regular expressions. `^` means start of line and `$` means end of line.
