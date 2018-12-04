@@ -26,6 +26,8 @@ Now create a super user and follow the prompts:
 Views without Templates
 -----------------------
 
+Save the following view code in your **app** folder `my_django_project/views.py`
+
 ```python
 from django.http import HttpResponse
 
@@ -46,7 +48,7 @@ For templates to work, don't forget to install your `my_django_project` app in `
         'my_django_project',
     ]
 
-So now whatever HTML file (say `index.html`) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view which can live in your **app** folder `my_django_project/views.py`:
+So now whatever HTML file (say `index.html`) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view:
 
 ```python
 from django.shortcuts import render
