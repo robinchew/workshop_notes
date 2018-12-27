@@ -44,13 +44,28 @@ l2 = [10, 11 ,12]
 l3 = l1 + l2 # Now l3 contains [1, 2, 3, 10, 11, 12]
 ```
 
-Appending to Lists
-------------------
+Changing Lists
+--------------
 
 Note that l1 changes from 3 to 4 items.
 ```
 l1 = [1, 2 ,3]
 l1.append(4) # will result in l1 containing [1, 2, 3, 4]
+
+l1[2] = 4 # results [1, 2, 4]
+l1[3] = 5 # Exception!
+```
+
+Changing Dictionaries
+---------------------
+
+```
+person = {
+    'name': 'Robin',
+    'age': 99,
+}
+
+person['age'] = 100 # Person (Robin) is now changed to 100 years old
 ```
 
 Functions
