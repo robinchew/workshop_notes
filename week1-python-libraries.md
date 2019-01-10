@@ -70,7 +70,7 @@ Now you can get the string (text) content (formatted as an XML in RSS format) fr
 
 `feed` is a datastructure type called a 'dictionary', and we will learn about datastructures next week and how to work with them. To see the content of feed we can print then, but it looks unreadable.
 
-Instead we are going to print `feed` with `pprint`:
+Instead we are going to print `feed` with `pprint` (Note that `pprint` is a standard library, so `pip install` is NOT necessary):
 
     import pprint
     feed = feedparser.parse(response.content)

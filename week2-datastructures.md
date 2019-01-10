@@ -59,6 +59,8 @@ l1[3] = 5 # Exception!
 Changing Dictionaries
 ---------------------
 
+Update an existing key value.
+
 ```
 person = {
     'name': 'Robin',
@@ -66,6 +68,12 @@ person = {
 }
 
 person['age'] = 100 # Person (Robin) is now changed to 100 years old
+```
+
+Add a new key value.
+
+```
+person['favourite_colour'] = 'red' # You get {'name': 'Robin', 'age': 100, 'favourite_colour': 'red'}
 ```
 
 Functions
