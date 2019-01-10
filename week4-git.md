@@ -52,3 +52,10 @@ Pulling other people's code
 ===========================
 
 git pull (but only works if you have run `git clone` or used `git remote add`)
+
+Pushing to GitHub
+=================
+
+- Signup an account at github.com
+- Create a new repository in github.com
+- Remember to **NOT** initialise the new repository with a README file
