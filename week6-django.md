@@ -13,7 +13,9 @@ Now your django server is running, open your browser, and type:
 
     localhost:8000
 
-Lets create a super user to login to admin at localhost:8000/admin.
+You can exit the running server with `ctrl + c` (You might need to press that more than once).
+
+Lets create a super user to login to admin at `localhost:8000/admin`.
 
 But creating a user requires the database to contain the user table, so you need to run migrate to create the default tables:
 
@@ -22,6 +24,20 @@ But creating a user requires the database to contain the user table, so you need
 Now create a super user and follow the prompts:
 
     python manage.py createsuperuser
+
+File Structure
+--------------
+```
+my_django_project (project)
+├── db.sqlite3
+├── manage.py
+└── my_django_project (app)
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+```
+Notice there are 2 folders named `my_django_project`, one is the **project** folder, the other is **app**.
 
 Views without Templates
 -----------------------
@@ -36,8 +52,28 @@ def index(request):
     return HttpResponse('<p>My favourite number is {}</p>'.format(num))
 ```
 
-Templates
----------
+URLS
+----
+
+You have a view but no way to access them from the URL.
+
+So you have to set the route in `my_django_project/urls.py`
+
+```python
+from django.urls import re_path
+from my_django_project.views import index
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    re_path('^$', index),
+    # Equivalent to below
+    # path('', index),
+]
+```
+Just to teach a bit of regular expressions, we are using `re_path` instead of `path`. The characters inside `r''` are regular expressions. `^` means start of line and `$` means end of line.
+
+With Templates
+--------------
 
 For templates to work, don't forget to install your `my_django_project` app in `my_django_project/settings.py`:
 
@@ -48,7 +84,7 @@ For templates to work, don't forget to install your `my_django_project` app in `
         'my_django_project',
     ]
 
-So now whatever HTML file (say `index.html`) you put in `my_django_project/templates/`, it would be recognised when you use `render` in your view:
+So now whatever HTML file (say `index.html`) you put in the app `my_django_project/templates/`, it would be recognised when you use `render` in your view:
 
 ```python
 from django.shortcuts import render
@@ -65,23 +101,3 @@ Assuming your template contains the following:
 Then your browser will render:
 
     My favourite number is 123
-
-URLS
-----
-
-You have a view and template but no way to access them from the URL.
-
-So you have to set the route in `my_django_project/urls.py`
-
-```python
-from django.urls import re_path
-from my_django_project.views import index
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    re_path('^$', index),
-    # Equivalent to below
-    # path('', index),
-]
-```
-Just to teach a bit of regular expressions, we are using `re_path` instead of `path`. The characters inside `r''` are regular expressions. `^` means start of line and `$` means end of line.
