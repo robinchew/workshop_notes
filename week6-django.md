@@ -72,6 +72,11 @@ urlpatterns = [
 ```
 Just to teach a bit of regular expressions, we are using `re_path` instead of `path`. The characters inside `r''` are regular expressions. `^` means start of line and `$` means end of line.
 
+Render Fuelwatch Table
+----------------------
+
+Before going any future, you should be able to import code from your fuelwatch in order to generate the table and render in views.
+
 With Templates
 --------------
 
