@@ -158,15 +158,23 @@ plus(arg_list[0], arg_list[1])
 
 a, b = arg_list
 plus(a, b)
+```
 
-# Unpack arguments
+Unpack argument list
 
+```python
 plus(*arg_list)
 plus(arg_list) # wrong
 
 plus(*[1, 2])
 plus(1, 2) # equivalent to line above
+```
 
+Unpack argument dictionary
+
+```python
+arg_dic = {'a': 1, 'b': 2}
+plus(**arg_dic)
 ```
 
 File handling with context processor
