@@ -22,12 +22,12 @@ You got to add extra things to your project to satisfy heroku.
 requirements.txt
 ----------------
 
-One file named `requirements.txt` is required in the project root directory and must contain:
+One file named `requirements.txt` is required in the project root directory and must at least contain:
 
     Django
     gunicorn
 
-These are the libraries that heroku will install when you deploy. Note that the newest version of the libraries will install.
+These are the libraries that heroku will install when you deploy. So libraries that your fuel app relies on, like `feedparser` needs to be included as well. Note that the newest version of the libraries will install.
 
 
 Procfile
