@@ -4,17 +4,38 @@ Heroku
 - Sign up and log in in heroku.com and create a new app, pick a name (eg. my-fuelwatch-app)and any country, and no pipeline.
 - Install the CLI tool as specified under the 'Deploy' tab.
 - Once you have the heroku installed, make sure you launch a new `cmd` terminal again, so that the `heroku` command is recognised.
-- Follow the rest of the instructions under "Deploy using Heroku Git", you can `git init` but do NOT just do `git add. ` because that will add the .pyc and .sqlite files which is not what you want in the Git repository. So `git add` the .py and .html files one by one and commit.
 - `cd` into your local django project folder and run `heroku login` to login.
-- then do `heroku git:remote -a my-fuelwatch-app`
+- Follow the rest of the instructions under "Deploy using Heroku Git", you can `git init` but do NOT just do `git add. ` because that will add the .pyc and .sqlite files which is not what you want in the Git repository. So `git add` the .py and .html files one by one and commit.
+- then do `heroku git:remote -a my-fuelwatch-app` in your Django project folder.
 - and finally `git push heroku master`.
 
 ERROR!
 ------
 
 Your push failed! Saying something about:
+    
+    Enumerating objects: 50, done.
+    Counting objects: 100% (50/50), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (36/36), done.
+    Writing objects: 100% (50/50), 7.40 KiB | 841.00 KiB/s, done.
+    Total 50 (delta 13), reused 0 (delta 0)
+    remote: Compressing source files... done.
+    remote: Building source:
+    remote:
+    remote:  !     No default language could be detected for this app.
+    remote:                         HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+    remote:                         See https://devcenter.heroku.com/articles/buildpacks
+    remote:
+    remote:  !     Push failed
+    remote: Verifying deploy...
+    remote:
+    remote: !       Push rejected to my-fuelwatch-app.
+    remote:
+    To https://git.heroku.com/my-fuelwatch-app.git
+    ! [remote rejected] master -> master (pre-receive hook declined)
+    error: failed to push some refs to 'https://git.heroku.com/my-fuelwatch-app.git'
 
-    No default language could be detected for this app.
 
 You got to add extra things to your project to satisfy heroku.
 
