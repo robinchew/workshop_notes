@@ -1,8 +1,9 @@
 Heroku
 ======
 
-- Sign up and log in in heroku.com and create a new app, pick a name (eg. my-fuelwatch-app)and any country with no pipeline.
+- Sign up and log in in heroku.com and create a new app, pick a name (eg. my-fuelwatch-app)and any country, and no pipeline.
 - Install the CLI tool as specified under the 'Deploy' tab.
+- Once you have the heroku installed, make sure you launch a new `cmd` terminal again, so that the `heroku` command is recognised.
 - Follow the rest of the instructions under "Deploy using Heroku Git", you can `git init` but do NOT just do `git add. ` because that will add the .pyc and .sqlite files which is not what you want in the Git repository. So `git add` the .py and .html files one by one and commit.
 - `cd` into your local django project folder and run `heroku login` to login.
 - then do `heroku git:remote -a my-fuelwatch-app`
