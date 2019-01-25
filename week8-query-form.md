@@ -7,10 +7,10 @@ from django.http import HttpResponse
 from fuel_scraper import get_fuel_data, gen_fuel, fuel_types, regions, day
 
 def index(request):
-    product_num = request.GET['product']
+    product_num = request.GET.get('product')
 
     # Getting fuel prices
-    urls = gen_fuel([product_num], regions, day)
+    urls = gen_fuel(product_num, regions, day)
     fuel_data = get_fuel_data(urls)
 
     fuel_data_rows_string = """
@@ -30,6 +30,6 @@ def index(request):
         """.format(**value)
 
     # Formats the html.
-    fuel_data_html = "<table>" + fuel_data_rows_string + "</table></tbody></body></html>"
+    fuel_data_html = "<html><table><tbody><body>" + fuel_data_rows_string + "</table></tbody></body></html>"
     return HttpResponse(fuel_data_html)
 ```
