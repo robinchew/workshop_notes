@@ -1,6 +1,38 @@
+Change fuel type with URL query string
+======================================
 
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
 
+from fuel_scraper import get_fuel_data, gen_fuel, fuel_types, regions, day
+
+def index(request):
+    # Getting fuel type from URL query string
+    product_num = request.GET['product']
+
+    # Getting fuel prices
+    urls = gen_fuel([product_num], regions, day)
+    fuel_data = get_fuel_data(urls)
+
+    for value in fuel_data:
+        fuel_data_rows_string += """
+            <tr>
+                <td>{price} </td><td>{address} </td><td>{location} </td><td>{brand}</td>
+            </tr>
+        """.format(**value)
+
+    # Formats the html.
+    fuel_data_html = "<table>" + fuel_data_rows_string + "</table></tbody></body></html>"
+    return HttpResponse(fuel_data_html)
 ```
+
+Change fuel type with Form 
+==========================
+
+Changing the form actually changes the URL
+
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 
