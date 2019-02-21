@@ -27,6 +27,28 @@ def index(request):
     return HttpResponse(fuel_data_html)
 ```
 
+Default dictionary key value
+-----------------------------
+
+If you apply the code above, you will find that you will be getting `KeyError`. The following code will demonstrate how to handle that error:
+
+```python
+d = {'preferred_colour': 'red'}
+# Or it can be
+d = {}
+```
+
+```
+if 'preferred_colour' in d:
+  colour = d['preferred_colour']
+else:
+  colour = 'blue'
+  ```
+
+Which is same as:
+
+```colour = d.get('preferred_colour', 'blue')```q
+
 Change fuel type with Form 
 ==========================
 
