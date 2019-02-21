@@ -30,24 +30,31 @@ def index(request):
 Default dictionary key value
 -----------------------------
 
-If you apply the code above, you will find that you will be getting `KeyError`. The following code will demonstrate how to handle that error:
+If you apply the code above, you will find that you will be getting `KeyError`.
 
+If you try to run the following code, there is no problem.
 ```python
 d = {'preferred_colour': 'red'}
-# Or it can be
-d = {}
+colour = d['preferred_colour']
 ```
 
+If you do this, you will get the `KeyError`.
+```python
+d = {}
+colour = d['preferred_colour']
+```
+
+Let's say you want to default to 'blue' if a preferred colour is not specified, you can do:
 ```
 if 'preferred_colour' in d:
   colour = d['preferred_colour']
 else:
   colour = 'blue'
-  ```
+```
 
 Which is same as:
 
-```colour = d.get('preferred_colour', 'blue')```q
+```colour = d.get('preferred_colour', 'blue')```
 
 Change fuel type with Form 
 ==========================
