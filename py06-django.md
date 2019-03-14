@@ -131,7 +131,7 @@ Render a HTML list from the Python list.
 ```
 
 How about a list of dictionaries? (Note that the dot `.key` is used instead of square brackets `['key']` to access keys.
-```
+
 ```html
     <ul>
         {% for dic in list_of_dic %}
