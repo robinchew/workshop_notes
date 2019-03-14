@@ -106,3 +106,26 @@ Assuming your template contains the following:
 Then your browser will render:
 
     My favourite number is 123
+
+Rendering complex datastructures in Django Templates
+----------------------------------------------------
+
+Before it was demonstrated how to pass a single integer (123) to the HTML template from the Django view. But how about passing a list?
+
+```python
+from django.shortcuts import render
+def index(request):
+    return render(request, 'index.html', {
+        'numbers': [123, 456],
+    })
+```
+
+Render a HTML list from the Python list.
+
+```html
+    <ul>
+        {% for num in numbers %}
+            <li>{{ num }}</li>
+        {% endfor %}
+    </ul>
+```
