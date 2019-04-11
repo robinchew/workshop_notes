@@ -34,3 +34,29 @@ Trigger Submit Event
     selectBox.onchange = submit;
 </script>
 ```        
+
+DOM element attributes
+----------------------
+
+```javascript
+var element = document.getElementBy('clickable');
+
+console.log(element.innerHTML);
+console.log(element.innerText);
+console.log(element.classList);
+
+// Get CSS style attributes
+console.log(element.style.display);
+console.log(element.style.visibility);
+console.log(element.style.backgroundColor);
+
+// Set CSS style attributes
+// Google these CSS styles to find out other values
+element.style.display = 'none';
+element.style.visibility = 'hidden';
+element.style.backgroundColor = 'red';
+
+// Change CSS style by adding/removing classes
+element.classList.add('pretty');
+element.classList.remove('pretty');
+```
