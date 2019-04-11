@@ -65,6 +65,9 @@ for i in l:
 for(var i=0; i<l.length; i++) {
     console.log(l[i]+1);
 }
+```
+
+Or
 
 ```javascript
 // JavaScript
@@ -78,7 +81,6 @@ If statement
 
 ```python
 # Python
-
 name = 'John'
 is_male = True
 
