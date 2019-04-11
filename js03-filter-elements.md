@@ -87,7 +87,7 @@ is_male = True
 if name != '':
     if name == 'John':
         colour = 'blue'
-    elif name == 'Alex' and not is_male:
+    elif (name == 'Alex' and not is_male) or name == 'Mary':
         colour = 'pink'
     else:
         colour = 'red'
@@ -103,7 +103,7 @@ if (name != '') {
     if (name == 'John') {
         colour = 'blue';
     }
-    else if (name == 'Alex' && ! is_male) {
+    else if ((name == 'Alex' && ! is_male) || name == 'Mary') {
         colour = 'pink';
     }
     else {
