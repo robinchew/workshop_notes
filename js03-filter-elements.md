@@ -29,14 +29,14 @@ Start from the body and try to reach the element containing `Two`.
 
     // Or
     // Get second item from first 'li' element
-    console.log(firstItem.nextSibling);
+    console.log(firstItem.nextElementSibling);
 </script>
 ```
 
 Walk up the tree
 ----------------
 
-Start from element 'Two'.
+Start from element containing `Two`.
 
 ```javascript
 var secondItem = document.getElementById('second')
@@ -71,4 +71,41 @@ for(var i=0; i<l.length; i++) {
 l.forEach(function(i) {
     console.log(i+1);
 })
+```
+
+If statement
+============
+
+```python
+# Python
+
+name = 'John'
+is_male = True
+
+if name != '':
+    if name == 'John':
+        colour = 'blue'
+    elif name == 'Alex' and not is_male:
+        colour = 'pink'
+    else:
+        colour = 'red'
+```
+
+```javascript
+// JavaScript
+var name = 'John';
+var is_male = true;
+var colour = '';
+
+if (name != '') {
+    if (name == 'John') {
+        colour = 'blue';
+    }
+    else if (name == 'Alex' && ! is_male) {
+        colour = 'pink';
+    }
+    else {
+        colour = 'red';
+    }
+}
 ```
