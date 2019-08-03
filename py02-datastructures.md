@@ -45,7 +45,7 @@ Looping Lists
 -------------
 
 ```python
-for friend in person1['friends']:
+for friend in person2['friends']:
     just_names.append(friend['name'])
 ```
 
