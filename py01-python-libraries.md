@@ -6,7 +6,11 @@ Terminal and shell means the same thing.
 Install Python
 ==============
 
-Install Python 3.x for Windows, and make sure you tick `Add Python 3.x to PATH` https://3.bp.blogspot.com/-pQXaSsTBovk/VfqLc2dTvcI/AAAAAAAABNE/SW0e9eEkhzs/s1600/python1.PNG. Re-install and tick it if you have to. This ensures that you can run `python` and `pip` in your `cmd` terminal.
+Install Python 3.x for Windows, and make sure you tick `Add Python 3.x to PATH`. See below.
+
+![Tick Add Python 3.x to PATH](https://3.bp.blogspot.com/-pQXaSsTBovk/VfqLc2dTvcI/AAAAAAAABNE/SW0e9eEkhzs/s1600/python1.PNG)
+
+Re-install and tick it if you have to. This ensures that you can run `python` and `pip` in your `cmd` terminal.
 
 Edit Python Code
 ================
