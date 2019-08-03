@@ -32,7 +32,7 @@ person2 = {
     'name': 'Robin',
     'age': 11,
     'friends': [
-        person2,
+        person1,
         {
             'name': 'Mary',
             'age': 65,
