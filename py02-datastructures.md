@@ -39,14 +39,20 @@ person2 = {
         },
     ],
 }
+from pprint import pprint
+pprint(person2, indent=4)
 ```
 
 Looping Lists
 -------------
 
 ```python
+just_names = []
+
 for friend in person2['friends']:
     just_names.append(friend['name'])
+
+print(just_names)
 ```
 
 Concatenating Lists (Joining Lists)
