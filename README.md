@@ -5,7 +5,7 @@ The purpose of these notes is to aid workshop participants in learning Python th
 
 The first note to start from is **py01-python-libraries.md**
 
-Here are some examples built by past workshoppers:
+Here are some examples built by past workshoppers (these sites take time to load because of free hosting):
 
 - https://tarunsanders-fuelwatch-app.herokuapp.com
 - https://fuel-slasher.herokuapp.com/table
