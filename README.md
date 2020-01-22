@@ -1,7 +1,7 @@
 Workshop Notes
 ==============
 
-The purpose of these notes is to aid workshop participants in learning Python through building an application for pulling cheap fuel prices from https://fuelwatch.wa.gov.au.
+The purpose of these notes is to aid workshop participants in learning Python through building an application for pulling cheap fuel prices from https://fuelwatch.wa.gov.au. You can find the development page under [RSS](https://www.fuelwatch.wa.gov.au/fuelwatch/pages/public/contentholder.jspx?key=fuelwatchRSS.html) at the bottom of the page.
 
 The first note to start from is **py01-python-libraries.md**
 
