@@ -39,7 +39,7 @@ Import library to pull from fuelwatch
 
 Have a look at how to use the `requests` library from:
 
-    http://docs.python-requests.org/en/master/
+    https://requests.readthedocs.io
 
 Lets add more code in `fuelwatch.py` and attempt to use the `requests` library.
 
