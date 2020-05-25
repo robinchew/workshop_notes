@@ -4,22 +4,24 @@ Notes on list and dictionaries
 Dictionary & List
 -----------------
 
+By the way the `#` symbol means comments.
+
 ```python
 d = {
     'key1': 1,
     'key2': 2,
 }
 
+d['key1'] # Returns 1
+
 l = [1, 2]
 
-l[0] # 1
+l[0] # Returns 1
 
 l = [
     {'key1': 1, 'key2': 2, 'key1': 3},
     {'key1': 11, 'key2': 22},
 ]
-
-d['key1']
 
 len(l) # Returns 2
 
