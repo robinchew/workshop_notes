@@ -4,14 +4,14 @@ Notes on list and dictionaries
 Data Types
 ----------
 
-* 'abc' (String)
-* 123 (Integer)
-* [] (Empty List)
-* ['abc', 123] (List of string and integer values)
-* {} (Empty Dictionary)
-* {'abc': 123} (Dictionary with 1 string key and integer value)
-* {'abc': 123, 'xyz': 456} (Dictionary with 2 string key and integer values)
-* {'abc': 123, 456: 'xyz'} (Dictionary with 2 key values, but the keys and values have a mixture of both integers and strings)
+* `'abc'` (String)
+* `123` (Integer)
+* `[]` (Empty List)
+* `['abc', 123]` (List of string and integer values)
+* `{}` (Empty Dictionary)
+* `{'abc': 123}` (Dictionary with 1 string key and integer value)
+* `{'abc': 123, 'xyz': 456}` (Dictionary with 2 string key and integer values)
+* `{'abc': 123, 456: 'xyz'}` (Dictionary with 2 key values, but the keys and values have a mixture of both integers and strings)
 
 Dictionary & List
 -----------------
