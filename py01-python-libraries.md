@@ -67,7 +67,7 @@ Now you can get the string (text) content (formatted as an XML in RSS format) fr
     import requests
     import feedparser
 
-    response = requests.get('https://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS')
+    response = requests.get('https://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS', headers={'user-agent': ''})
 
     feed = feedparser.parse(response.content)
     print(feed)
